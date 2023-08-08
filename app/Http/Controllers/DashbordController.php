@@ -16,10 +16,10 @@ class DashbordController extends Controller
         return view('user_statistics');
     }
 
-    public function buildDashboard(){
+    public function buildDashboard($year){
         $dash = new DashboardService();
         //$dto = $dash->BUILD_DASHBOARD();
-        return response()->json($dash->BUILD_DASHBOARD());
+        return response()->json($dash->BUILD_DASHBOARD($year));
         
     }
 

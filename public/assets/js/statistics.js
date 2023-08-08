@@ -1,5 +1,14 @@
 $(document).ready(function(){
- 
+  let chBarCHART = undefined
+  let chDonut1CHART = undefined
+
+  $('#sb_year').on('change', function() {
+    console.log( 'Selecionou', this.value );
+    chBarCHART.destroy();
+    chDonut1CHART.destroy()
+    LOAD_DASHBOARD_DATA(this.value);
+  });
+
   const MONTHS = [{id:1,desc:'Jan'},{id:2,desc:'Fev'},{id:3,desc:'Mar'},{id:4,desc:'Abr'},
                   {id:5,desc:'Mai'},{id:6,desc:'Jun'},{id:7,desc:'Jul'},{id:8,desc:'Ago'},
                   {id:9,desc:'Set'},{id:10,desc:'Out'},{id:11,desc:'Nov'},{id:12,desc:'Dez'}]
@@ -12,11 +21,12 @@ $(document).ready(function(){
 var colors = ['#000080','#28a745','#333333','#FFFF00','#dc3545','#6c757d'];
 const FILL_BAR_CHART = (monthsDashboard) =>{
     var chBar = $("#chBar");
+
     const COLERA_DATA = monthsDashboard.map(data=>data.colera)
     const MALARIA_DATA = monthsDashboard.map(data=>data.malaria)
     const TUBERCULOSE_DATA = monthsDashboard.map(data=>data.tuberculose)
     if (chBar) {
-      new Chart(chBar, {
+      chBarCHART = new Chart(chBar, {
       type: 'bar',
       data: {
         labels: GET_CURRENT_MONTHS(),
@@ -76,7 +86,7 @@ const FILL_CIRCLE_CHART = (totalDashboard) =>{
 
     var chDonut1 = $("#chDonut1");
     if (chDonut1) {
-      new Chart(chDonut1, {
+      chDonut1CHART = new Chart(chDonut1, {
           type: 'pie',
           data: chDonutData1,
           options: donutOptions
@@ -85,8 +95,8 @@ const FILL_CIRCLE_CHART = (totalDashboard) =>{
 }
 
 
-const LOAD_DASHBOARD_DATA = ()=>{
-    fetch(`/statistics_dashboard`)
+const LOAD_DASHBOARD_DATA = (year)=>{
+    fetch(`/statistics_dashboard/${year}`)
           .then((response) => response.json())
           .then((json_array) => {
             FILL_BAR_CHART(json_array.months_dashboard)
@@ -98,7 +108,12 @@ const LOAD_DASHBOARD_DATA = ()=>{
     
 }
 
-LOAD_DASHBOARD_DATA();
+
+console.log('ANO: ',new Date().getFullYear())
+LOAD_DASHBOARD_DATA(new Date().getFullYear());
+
+
+
  
  });
  

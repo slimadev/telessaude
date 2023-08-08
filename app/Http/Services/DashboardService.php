@@ -10,13 +10,18 @@ use App\Http\Services\DashboardResumeDTO;
 
 class DashboardService
 {
-    public function  BUILD_DASHBOARD(){
+    public function  BUILD_DASHBOARD($year){
         $total_dashboard = new DashboardDTO('NA',0, 0,0, 0);
 
         $currentMonth = date('m');
-        $new_months_dashboard = array();;
+        $currentYear = date('y');
+        if($year < $currentYear){
+            $currentMonth = 12;
+        }
+        $new_months_dashboard = array();
         
         $months_dashboard = DB::table("dashbords as dsb")
+                    ->whereRaw('YEAR(dsb.created_at) = ?',[$year])
                     ->whereRaw('MONTH(dsb.created_at) <= ?',[$currentMonth])
                     ->selectRaw('MONTH(dsb.created_at) as month')
                     ->selectRaw("count(case when dsb.description = 'COLERA' then 1 end) as colera")

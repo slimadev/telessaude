@@ -69,7 +69,7 @@ Route::get('usage_statistics', [DashbordController::class, 'statistic'])
 Route::get('user_statistics', [DashbordController::class, 'users'])
                 ->name('user_statistics');              
 
-Route::get('statistics_dashboard', [DashbordController::class, 'buildDashboard']);
+Route::get('statistics_dashboard/{year}', [DashbordController::class, 'buildDashboard']);
 Route::get('user_statistics_dashboard', [DashbordController::class, 'buildUsersDashboard']);
 
 Route::post('documents_show', [DocumentController::class, 'show'])
