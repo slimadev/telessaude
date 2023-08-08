@@ -47,6 +47,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/documents', [DocumentController::class, 'index'])->name('documents.start');
     Route::post('/documents', [DocumentController::class, 'update'])->name('documents.update');
     Route::get('/download/{req}', [DocumentController::class, 'download'])->name('download');
+    Route::get('/downloadr/{req}', [DocumentController::class, 'downloadr'])->name('downloadr');
 });
 
 Route::middleware('auth')->group(function () {

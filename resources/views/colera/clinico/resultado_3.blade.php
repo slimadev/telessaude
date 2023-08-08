@@ -37,13 +37,13 @@
             
             <ol>
             <li>
-            Tabela de reidratação em crianças com mais de 5 anos e adultos <a href="{{url('/download/Anexo II.pdf')}}">consultar anexo II </a> 
+            Tabela de reidratação em crianças com mais de 5 anos e adultos <a href="{{url('/downloadr/Anexo II')}}">consultar anexo II </a> 
             </li>
             <li>
-            Tabela de reidratação em crianças com menos de 5 anos <a href="#">consultar anexo III </a>
+            Tabela de reidratação em crianças com menos de 5 anos <a href="{{url('/downloadr/Anexo III')}}">consultar anexo III </a>
             </li>
             <li>
-            Tabela de reidratação em crianças desnutridas <a href="#">consultar anexo IV </a>
+            Tabela de reidratação em crianças desnutridas <a href="{{url('/downloadr/Anexo IV')}}">consultar anexo IV </a>
             </li>
             </ol>
         @elseif($has_pregnant ==1)

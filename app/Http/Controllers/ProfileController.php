@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
 use App\Models\SimpleEntity;
+use App\Models\User;
 use App\Models\ProfessionalCategory;
 
 class ProfileController extends Controller
@@ -33,9 +34,13 @@ class ProfileController extends Controller
     /**
      * Update the user's profile information.
      */
-    public function update(ProfileUpdateRequest $request): RedirectResponse
+    /** 
+    public function update(ProfileUpdateRequest $request, Request $req): RedirectResponse
     {
+        $framing = SimpleEntity::where('code', $req->input('framing_code'))->first();
+        error_log("id=============");
         $request->user()->fill($request->validated());
+       $request->user()->framing_id=$framing->id;
 
         if ($request->user()->isDirty('email')) {
             $request->user()->email_verified_at = null;
@@ -46,9 +51,35 @@ class ProfileController extends Controller
         return Redirect::route('profile.edit')->with('status', 'profile-updated');
     }
 
+    */
+
     /**
      * Delete the user's account.
      */
+
+     public function update(Request $request): RedirectResponse
+     {
+        $framing = SimpleEntity::where('code', $request->input('framing_code'))->first();
+
+         $user = User::where('id', $request->input('uid'))->first();
+         
+       
+            $user->name = $request->input('name');
+            $user->framing_id=$framing->id;
+            $user->email = $request->input('email');
+            $user->province_id = $request->input('province_id');
+            $user->category_id = $request->input('category_id');
+            $user->nuit = $request->input('nuit');
+
+           
+
+        
+        $user->save();
+ 
+         return Redirect::route('profile.edit')->with('message', 'profile-updated');
+     }
+
+
     public function destroy(Request $request): RedirectResponse
     {
         $request->validateWithBag('userDeletion', [

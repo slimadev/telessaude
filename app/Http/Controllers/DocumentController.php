@@ -9,6 +9,7 @@ use App\Models\Document;
 
 
 
+
 class DocumentController extends Controller
 {
     public function index(){
@@ -16,7 +17,14 @@ class DocumentController extends Controller
                             $q->where('code', '60');
                         })->get();
         //Document::where('type', 'PROVINCIA')->get();
-        return view('documents.list',['documents'=>$documents]);
+        $file1=storage_path()."/app/docs/Anexo I";
+        $file2=storage_path()."/app/docs/Anexo II";
+        $file3=storage_path()."/app/docs/Anexo III";
+        $file4=storage_path()."/app/docs/Anexo IV";
+        $files= array($file1, $file2, $file3,  $file4);
+
+
+        return view('documents.list',['documents'=>$documents, 'files'=>$files]);
     }
 
     public function show(Request $request)
@@ -47,14 +55,28 @@ class DocumentController extends Controller
             
         }
    }
-   public function download($req){
+   public function download($req, Request $request){
       //PDF file is stored under project/public/download/info.pdf
       $fileName=$req;
       $file=storage_path()."/app/docs/".$fileName;
       if(file_exists(storage_path()."/app/docs/".$fileName)){
         return Response::download($file, $fileName, ['Content-Type: application/pdf']);
       }else{
+       
         return redirect()->route('documents.start');
+      }
+   
+    }
+
+    public function downloadr($req, Request $request){
+      //PDF file is stored under project/public/download/info.pdf
+      $fileName=$req;
+      $file=storage_path()."/app/docs/".$fileName;
+      if(file_exists(storage_path()."/app/docs/".$fileName)){
+        return Response::download($file, $fileName, ['Content-Type: application/pdf']);
+      }else{
+       
+        //return view('colera.clinico.resultado_3');
       }
     }
 }

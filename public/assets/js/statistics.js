@@ -9,8 +9,7 @@ $(document).ready(function(){
     return MONTHS.filter(month=>month.id < current_month).map(month=>month.desc)
   }
 // chart colors
-var colors = ['#007bff','#28a745','#333333','#c3e6cb','#dc3545','#6c757d'];
-
+var colors = ['#000080','#28a745','#333333','#FFFF00','#dc3545','#6c757d'];
 const FILL_BAR_CHART = (monthsDashboard) =>{
     var chBar = $("#chBar");
     const COLERA_DATA = monthsDashboard.map(data=>data.colera)
@@ -33,7 +32,7 @@ const FILL_BAR_CHART = (monthsDashboard) =>{
         },
         {
           data: TUBERCULOSE_DATA,
-          backgroundColor: colors[3],
+          backgroundColor: colors[2],
           label:'Tuberculose'
         }]
       },

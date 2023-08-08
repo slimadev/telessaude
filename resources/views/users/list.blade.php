@@ -10,10 +10,15 @@
 
       </div>
     </section><!-- End Breadcrumbs class="btn btn-primary" -->
-
+            
     <section class="inner-page row d-flex justify-content-center">
+    @if(session()->has('message'))
+                  <div class="alert alert-success row d-flex justify-content-center col-4">
+                      {{ session()->get('message') }}
+                  </div>
+              @endif
     <div class="container row d-flex justify-content-center">
-
+             
     <div class="result-form " >
     <table class="table">
   <thead>
@@ -39,8 +44,8 @@
       @endif
       </td>
       <td>
-      @if(!empty($user->program_id )) 
-      {{$user->program->descrption}}
+      @if(!empty($user->framing_id)) 
+      {{$user->program->description}}
       @endif
       </td>
       <td>

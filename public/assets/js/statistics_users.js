@@ -2,7 +2,7 @@ $(document).ready(function(){
  
   
 // chart colors
-var colors = ['#007bff','#28a745','#333333','#c3e6cb','#dc3545','#6c757d'];
+var colors = ['#000080','#28a745','#333333','#FFFF00','#dc3545','#6c757d'];
 
 const FILL_BAR_CHART = (provincessDashboard) =>{
     var chBar = $("#chBar");
@@ -30,12 +30,12 @@ const FILL_BAR_CHART = (provincessDashboard) =>{
         },
         {
           data: DOCENTE_DATA,
-          backgroundColor: colors[5],
+          backgroundColor: colors[2],
           label:'Docente'
         },
         {
           data: ESTUDANTE_DATA,
-          backgroundColor: colors[4],
+          backgroundColor: colors[3],
           label:'Estudante'
         }]
       },

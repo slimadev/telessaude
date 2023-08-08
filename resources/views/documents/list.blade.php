@@ -28,9 +28,11 @@
 
   @foreach ($documents as $document)
     <tr>
+      
       <th scope="row"><a href="{{url('/download/'.$document->url)}}">{{ $document->url }}</a></th>
       <td>{{ $document->name }}</td>
       <td>{{ $document->program->descrption }}</td>
+      @if(Auth::user()->is_admin)
       <td>
       <form method="POST" action="{{ route('documents_show') }}">
                     @csrf
@@ -41,6 +43,7 @@
                     </a>
       </form>
     </td>
+    @endif
     </tr>
   @endforeach
     

@@ -102,12 +102,12 @@
             <ul>
               <li>
                       <a href="{{ url('/profile') }}"  >
-                          Perfil
+                          Alterar dados pessoais
                       </a>
                 </li>
                 <li>
                       <a href="{{ url('/changepassword') }}"  >
-                          Trocar senha
+                          Alterar senha
                       </a>
                 </li>
                 <li>

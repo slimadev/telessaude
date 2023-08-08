@@ -32,6 +32,6 @@ class UserController extends Controller
             $userModel->program_id = $request->input('program_id');
         }
         $userModel->save();
-        return redirect()->route('users.start');
+        return redirect()->route('users.start')->with('message', 'Usuario Actualizado Com Sucesso!');
    }
 }
