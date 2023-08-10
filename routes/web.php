@@ -7,6 +7,7 @@ use App\Http\Controllers\ColeraClinicoController;
 use App\Http\Controllers\DashbordController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\MalariaController;
 
 
 /*
@@ -77,6 +78,17 @@ Route::post('documents_show', [DocumentController::class, 'show'])
 
 Route::post('users_show', [UserController::class, 'show'])
                 ->name('users_show');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/malaria_calculo', [MalariaController::class, 'calculo'])->name('malaria.calculo');
+    Route::post('/malaria_calculo', [MalariaController::class, 'do_calculo'])->name('malaria.do_calculo');
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/malaria_manejo', [MalariaController::class, 'manejo'])->name('malaria.manejo');
+    Route::post('/malaria/manejo', [MalariaController::class, 'do_manejo'])->name('malaria.do_manejo');
+});
+                
 
 
 require __DIR__.'/auth.php';

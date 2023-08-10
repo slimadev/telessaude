@@ -1,7 +1,6 @@
 <div class="result-form " >
     <div class="row">
     <div class="col-lg-1 d-flex flex-row justify-content-end">
-    <img src="assets/img/rs1.png"  alt="" width="50" height="50">
         
     </div>
     <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">

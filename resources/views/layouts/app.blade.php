@@ -91,7 +91,31 @@
               </li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Malária</a></li>
+
+          <li class="dropdown ">
+              <a href="#" > <span >
+              Malária
+              </span> <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+              <li>
+                  <a href="{{ url('/malaria_calculo') }}">Cálculo da dose de artesunato</a>
+                </li>
+                <li>
+                    <a href="{{ url('/malaria_manejo') }}">Manejo da malária</a>
+                </li>
+                <li>
+                  <a href="{{ url('/users') }}">Procedimento de Testes Rápidos</a>
+                </li>
+                <li>
+                    <a href="{{ url('/documents') }}">Procedimento de Preparação de Artesunato</a>
+                </li>
+                
+              </ul>
+            </li>
+
+
+
           <li><a class="nav-link scrollto" href="#contact">Tuberculose</a></li>
           <li class="dropdown ">
             <a href="#" > <span >
