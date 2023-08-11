@@ -13,7 +13,7 @@ class UserController extends Controller
         //$users =  User::all();
       $users=DB::table('users')
                             ->leftJoin('simple_entities', 'simple_entities.id','=','users.program_id')
-                            ->select('users.id', 'users.is_admin', 'users.name', 'users.email', 'users.framing_id', 'simple_entities.type')
+                            ->select('users.id', 'users.is_admin', 'users.name', 'users.email', 'users.framing_id', 'simple_entities.descrption')
                             ->get();
 
 

@@ -46,7 +46,7 @@
       <td>
       @if(!empty($user->framing_id)) 
              
-               {{$user->type}}
+               {{$user->descrption}}
       @endif
       </td>
       <td>
