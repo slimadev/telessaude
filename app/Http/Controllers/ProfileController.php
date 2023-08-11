@@ -22,12 +22,14 @@ class ProfileController extends Controller
         $provincies = SimpleEntity::where('type', 'PROVINCIA')->get();
         $frames = SimpleEntity::where('type', 'ENQUADRAMENTO')->get();
         $categories = SimpleEntity::where('type', 'CATEGORIA')->get();
+        $programas = SimpleEntity::where('type', 'PROGRAMA')->get();
 
         return view('profile.edit', [
             'user' => $request->user(),
             'provincies'=>$provincies,
             'frames'=>$frames,
             'categories'=>$categories,
+            'programas'=>$programas,
         ]);
     }
 
@@ -52,6 +54,7 @@ class ProfileController extends Controller
             $user->email = $request->input('email');
             $user->province_id = $request->input('province_id');
             $user->category_id = $request->input('category_id');
+            $user->program_id = $request->input('program_id');
             $user->nuit = $request->input('nuit');
 
            
@@ -59,7 +62,7 @@ class ProfileController extends Controller
         
         $user->save();
  
-         return Redirect::route('profile.edit')->with('message', 'profile-updated');
+         return Redirect::route('profile.edit')->with('message', 'Dados alterados com sucesso!');
      }
 
 

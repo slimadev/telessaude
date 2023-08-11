@@ -45,7 +45,8 @@
       </td>
       <td>
       @if(!empty($user->framing_id)) 
-      {{$user->program->description}}
+             
+               {{$user->type}}
       @endif
       </td>
       <td>

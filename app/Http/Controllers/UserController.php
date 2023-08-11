@@ -5,11 +5,21 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\SimpleEntity;
+use DB;
 
 class UserController extends Controller
 {
     public function index(){
-        $users =  User::all();
+        //$users =  User::all();
+      $users=DB::table('users')
+                            ->leftJoin('simple_entities', 'simple_entities.id','=','users.program_id')
+                            ->select('users.id', 'users.is_admin', 'users.name', 'users.email', 'users.framing_id', 'simple_entities.type')
+                            ->get();
+
+
+                            
+
+     
         //Document::where('type', 'PROVINCIA')->get();
         return view('users.list',['users'=>$users]);
     }

@@ -12,6 +12,11 @@
     </section><!-- End Breadcrumbs -->
 
     <section class="inner-page row d-flex justify-content-center">
+    @if(session()->has('message'))
+                  <div class="alert alert-success row d-flex justify-content-center col-4">
+                      {{ session()->get('message') }}
+                  </div>
+              @endif
     <div class="container row d-flex justify-content-center">
         @include('profile.partials.update-profile-information-form')
     </div>

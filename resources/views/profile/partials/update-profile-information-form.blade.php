@@ -86,7 +86,7 @@
   
     <div class="col form-group has-validation">
       <p>Área Ocupacional </p>
-        <select id="dv_pro_required_fiels" class="form-control form-select  form-select-lg mb-3" aria-label=".form-select-lg example" required>
+        <select id="dv_pro_required_fiels" class="form-control form-select  form-select-lg mb-3" aria-label=".form-select-lg example" name="categoria_id" required>
         @foreach ($categories as $category)
           @if($user->category_id == $category->id)
             <option value="{{ $category->id }}" selected> {{ $category->descrption }}</option>
@@ -103,8 +103,14 @@
 
     <div class="col form-group has-validation">
       <p>Ocupação</p>
-        <select id="dv_ocupational_fiels" class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="category_id" required>
-        <option value="" selected>Ocupação</option>
+        <select id="dv_ocupational_fiels" class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="program_id" required>
+        @foreach($programas as $programa)
+          @if($user->programa_id==$programa->id)
+        <option value="{{$programa->id}}" selected>{{$programa->descrption}}</option>
+          @else
+          <option value="{{$programa->id}}" selected>{{$programa->descrption}}</option>
+          @endif
+        @endforeach
         </select>
         <div class="invalid-feedback">
           Por favor selecione Ocupação
