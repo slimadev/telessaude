@@ -16,7 +16,9 @@
     <div class="container row d-flex justify-content-center">
   
     @include('malaria.manejo.step-one')
+    @include('malaria.manejo.step-one-one')
     @include('malaria.manejo.step-two')
+    @include('malaria.manejo.step-two-one')
     @include('malaria.manejo.step-tree')
     
 

@@ -82,7 +82,7 @@
 </div>
 <p>Prega cutânea? </p>
 <div class="col form-group">
-    <select class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="st1_cutanea" id="st1_cutanea">
+    <select class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="st3_cutanea" id="st3_cutanea">
     <option value="" selected> Prega cutânea?</option>
     <option value="2">Regride rapidamente</option>
     <option value="3">Regride lentamente (< 2 segundos)</option>

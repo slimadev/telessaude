@@ -81,17 +81,22 @@
             </li>
           
           @endif
-          <li class="dropdown megamenu"><a href="#"><span>Cólera</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li>
-                <a href="{{ url('/colera') }}">Cuidados de Enfermagem</a>
-              </li>
-              <li>
-                <a href="{{ url('/colera_clinico') }}">Clínico</a>
-              </li>
-            </ul>
-          </li>
 
+          <li class="dropdown ">
+              <a href="#" > <span >
+              Cólera
+              </span> <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+              <li>
+                  <a href="{{ url('/colera') }}">Cuidados de Enfermagem</a>
+                </li>
+                <li>
+                  <a href="{{ url('/colera_clinico') }}">Clínico</a>
+                </li>
+                
+              </ul>
+            </li>
           <li class="dropdown ">
               <a href="#" > <span >
               Malária

@@ -12,10 +12,12 @@ class MalariaController extends Controller
     }
 
     public function do_calculo(Request $request){
-        $tipo = $request->input('tipo');
+        $tipo = $request->input('solutionType');
         $peso = $request->input('peso');
         $via = $tipo == 1? "Via Endovenosa (IV)" : "Via Intra-muscular (IM)" ;
         $resultado = 0;
+
+        error_log($tipo);
 
         if($peso<20){
             $resultado = $tipo == 1? $peso*0.3 : $peso*0.15 ;

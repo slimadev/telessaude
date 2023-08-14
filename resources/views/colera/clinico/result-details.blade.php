@@ -23,15 +23,15 @@ Clique para ver detalhes do paciente
                 Criança?
                 </div>
                 <div class="col">
-                <strong class="badge bg-secondary" style="height:25px;width:100%;text-align:left">@if($is_child ==1) SIM  @else NAO @endif</strong>
+                <strong class="badge bg-secondary" style="height:25px;width:100%;text-align:left">@if($is_child ==1) SIM  @else Não @endif</strong>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                Grávida
+                Grávida:
                 </div>
                 <div class="col">
-                <strong class="badge bg-secondary" style="height:25px;width:100%;text-align:left">@if($has_pregnant ==1) SIM  @else NAO @endif</strong>
+                <strong class="badge bg-secondary" style="height:25px;width:100%;text-align:left">@if($has_pregnant ==1) SIM  @else Não @endif</strong>
                 </div>
             </div>
             @foreach($all_filled_data as $detail)

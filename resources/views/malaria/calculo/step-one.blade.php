@@ -25,7 +25,7 @@
 </div>
 <div class="col-md-6 form-check ">
     <input class="form-check-input" value="2" type="radio" name="solutionType" id="solutionType" >
-    <label class="form-check-label" for="tipo">
+    <label class="form-check-label" for="solutionType">
     Via Intra-muscular (IM)
     </label>
 </div>

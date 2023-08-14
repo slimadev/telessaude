@@ -67,6 +67,7 @@
     <option value="3">Muito encovados</option>
     </select>
 </div>
+
 <p>Respiração?  </p>
 <div class="col form-group">
     <select class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="st3_respiracao">

@@ -3,6 +3,7 @@
 namespace App\Http\Services;
 use App\Http\Services\FrequencyDTO;
 use App\Models\Dashbord;
+use App\Models\SimpleEntity;
 
 
 class ColeraService

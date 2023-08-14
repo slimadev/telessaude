@@ -71,6 +71,7 @@
     <option value="3">Muito encovados</option>
     </select>
 </div>
+<div id="dvChildDataSthree"></div>
 <p>Respiração?  </p>
 <div class="col form-group">
     <select class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="st3_respiracao" id="st3_respiracao">
@@ -94,7 +95,7 @@
 <div class="col-lg-1 d-flex flex-row ">
 <button id="btn_step_tree_back" class="btn btn-primary"><i class="bi bi-arrow-left">{{$button_previous_name}} </i></button>
 &nbsp;
-<form id="dvStepTreeForm" method="post" action="{{ route('colera_clinico.submit') }}"  >
+<form id="dvStepTreeForm" method="post" action="{{ route('colera.submit') }}"  >
     @csrf
     <div id="dvStepTreeResultFileds"></div>
     <button type="submit" class="btn btn-primary">Submeter </button>

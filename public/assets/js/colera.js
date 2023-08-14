@@ -103,6 +103,9 @@ $(document).ready(function(){
 
         SET_ANORMAL_HART_RATE(hart_rate_value);
         SET_ANORMAL_RESPIRATORY_RATE(respiratory_rate_value);
+
+        $("#dvChildDataSthree").append(CHILD_DATA_DISPLAY_S3())
+
       }
 
       $("#dvStepOne").css("display", "none");
@@ -235,15 +238,7 @@ const FILL_LAST_DATA = () =>{
 }
 
   const CHILD_DATA_DISPLAY = ()=> {
-    return `<p>Bebe/mama? </p>
-                <div class="col form-group">
-                    <select class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="st2_mama">
-                    <option value="1" selected>Bebe/mama?</option>
-                    <option value="2">Avidamente</option>
-                    <option value="3">Pouco/incapaz</option>
-                    </select>
-                </div>
-                <p>Preenchimento capilar? </p>
+    return `<p>Preenchimento capilar? </p>
                 <div class="col form-group">
                     <select class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="st2_capilar">
                     <option value="1" selected>Preenchimento capilar?</option>
@@ -296,6 +291,17 @@ $('#dvStepTreeForm').submit(function(event) {
     event.preventDefault();
   }
 });
+
+const CHILD_DATA_DISPLAY_S3=()=>{
+  return `<p>Bebe/mama? </p>
+                <div class="col form-group">
+                    <select class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="st2_mama">
+                    <option value="1" selected>Bebe/mama?</option>
+                    <option value="2">Avidamente</option>
+                    <option value="3">Pouco/incapaz</option>
+                    </select>
+                </div>`
+}
 
 });
 

@@ -235,16 +235,26 @@ const  VALIDATE_STEP_3=()=>{
   const arterial_value = $("input[name=arterial_value]").val();
   const braquial_value = $("input[name=braquial_value]").val();
 
+  console.log(
+
+    $('#st3_vomitos').find(":selected").val() ,
+    $('#st3_urina').find(":selected").val() ,
+    $('#st3_mental').find(":selected").val() ,
+    $('#st3_olhos').find(":selected").val() ,
+    $('#st3_cutanea').find(":selected").val() ,
+    $('#st3_pulso').find(":selected").val() ,
+    $('#st3_respiracao').find(":selected").val() ,
+    arterial_value,
+    braquial_value
+  )
   if(!$('#st3_digestoes').find(":selected").val() || 
     !$('#st3_vomitos').find(":selected").val() || 
     !$('#st3_urina').find(":selected").val() || 
     !$('#st3_mental').find(":selected").val() || 
     !$('#st3_olhos').find(":selected").val() || 
-    !$('#st1_cutanea').find(":selected").val() ||
+    !$('#st3_cutanea').find(":selected").val() ||
     !$('#st3_pulso').find(":selected").val() ||
-    !$('#st3_respiracao').find(":selected").val() ||
-    !arterial_value || isNaN(arterial_value) ||
-    !braquial_value|| isNaN(braquial_value)
+    !$('#st3_respiracao').find(":selected").val()
     ){
 
     $.notify(" Insira todos os dados antes de prosseguir!", "error");
@@ -292,14 +302,7 @@ const FILL_LAST_DATA = () =>{
                     <
                     </select>
                 </div>
-                <p>Apresenta sinais de oligoanúria/anúria?</p>
-                <div class="col form-group">
-                    <select class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="st2_anuaria">
-                    <option value="1" selected>Apresenta sinais de oligoanúria/anúria?</option>
-                    <option value="2">Sim</option>
-                    <option value="3">Não</option>
-                    </select>
-                </div>
+               
                 <p>Frequência cardíaca? <span style="color:red">* Digite números no intervalo de ${HART_RATE_INTERVAL.min} a ${HART_RATE_INTERVAL.max}</span> </p>
                 <div class="col form-group">
                     <input name="hart_rate_value" type="number" class="form-control" placeholder="Frequência cardíaca?"  min="${HART_RATE_INTERVAL.min}" max="${HART_RATE_INTERVAL.mav} " required/>

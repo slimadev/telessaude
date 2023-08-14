@@ -56,10 +56,10 @@
                 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Província</th>
-      <th scope="col">Cólera</th>
-      <th scope="col">Malária</th>
-      <th scope="col">Tuberculose</th>
+      <th scope="col" class="statistic-table-font">Província</th>
+      <th scope="col" class="statistic-table-font">Cólera</th>
+      <th scope="col" class="statistic-table-font">Malária</th>
+      <th scope="col" class="statistic-table-font">Tuberculose</th>
     </tr>
   </thead>
   <tbody>
@@ -67,10 +67,10 @@
 
   @foreach ($provincies_dashboard as $province_dashboard)
     <tr>
-      <th scope="row">{{ $province_dashboard->descrption }}</th>
-      <td>{{ $province_dashboard->colera }}</td>
-      <td>{{ $province_dashboard->malaria }}</td>
-      <td>{{ $province_dashboard->tuberculose }}</td>
+      <td  class="statistic-table-font">{{ $province_dashboard->descrption }}</th>
+      <td class="statistic-table-font">{{ $province_dashboard->colera }}</td>
+      <td class="statistic-table-font">{{ $province_dashboard->malaria }}</td>
+      <td class="statistic-table-font">{{ $province_dashboard->tuberculose }}</td>
     </tr>
   @endforeach
 
