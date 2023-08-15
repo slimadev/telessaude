@@ -1,4 +1,4 @@
-<div class="result-malaria-form" id="dvResultado">
+<div class="result-malaria-form" id="dvResultado" style="display:none" >
     <div class="row" style="background-color:#012970 ;">
         <div class="col-lg-1 d-flex flex-row justify-content-end">
         <img src="assets/img/rs2.png"  alt="" width="50" height="50">

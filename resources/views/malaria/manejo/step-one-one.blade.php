@@ -1,4 +1,4 @@
-<div class="result-form " id="dvStepOneOne" style="display:none" >
+<div class="result-form " id="dvStepOneOne" >
     <div class="row" style="background-color:#012970 ;">
         <div class="col-lg-1 d-flex flex-row justify-content-end">
         <img src="assets/img/instrucao.png"  alt="" width="50" height="50">
