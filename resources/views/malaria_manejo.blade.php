@@ -20,7 +20,7 @@
     @include('malaria.manejo.step-two')
     @include('malaria.manejo.step-two-one')
     @include('malaria.manejo.step-tree')
-    
+    @include('malaria.manejo.resultado')
 
    
     </div>

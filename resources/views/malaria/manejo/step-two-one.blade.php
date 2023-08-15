@@ -15,7 +15,7 @@
     <div class="custom-text-result" style="color:red;"><strong>Malária complicada/grave</strong></div>
     <img src="assets/img/VECTOR5.png"  alt="" width="200" height="200"/>
     <div class="card mb-3" style="min-width: 540px;">
-  <div class="row g-0" >
+    <div class="row g-0" >
     <div class="col-md-2 d-flex flex-col align-items-center">
     </div>
     <div class="col-md-8">

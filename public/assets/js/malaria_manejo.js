@@ -83,5 +83,11 @@ $(document).ready(function(){
     
    });
 
+   $("#btnStepThree").click(function(e){
+    $("#dvResultado").css("display", "");
+    $("#dvStepThree").css("display", "none");
+    
+   });
+
 });
 

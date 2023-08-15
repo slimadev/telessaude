@@ -2,14 +2,14 @@
 <div class="instruction">
 <div class="row">
     <div class="col-lg-1 d-flex flex-row justify-content-end">
-    <img src="assets/img/instrucao.png"  alt="" width="50" height="50">
-        
-    </div>
-    <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
-        <p>
-        <strong>Introdução  dos parâmetros de referência</strong>
-        </p>
-    </div>
+        <img src="assets/img/instrucao.png"  alt="" width="50" height="50">
+            
+        </div>
+        <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <p>
+            <strong>Introdução  dos parâmetros de referência</strong>
+            </p>
+        </div>
     </div>
 </div>
 <hr/>

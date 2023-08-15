@@ -1,4 +1,4 @@
-<div class="result-form " id="dvStepOne">
+<div class="result-form " id="dvStepOne" style="display:none">
     <div class="row" style="background-color:#012970 ;">
        
 

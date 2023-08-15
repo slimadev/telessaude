@@ -1,16 +1,16 @@
 <div class="reply-form " >
 <div class="instruction" >
-<div class="row">
-    <div class="col-lg-1 d-flex flex-row justify-content-end">
-        
-    </div>
-    <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200" >
-        <div class="custom-text-etapa-2">
-        Introdução  dos parâmetros de referência
+    <div class="row" style="background-color:#012970 ;">
+        <div class="col-lg-1 d-flex flex-row justify-content-end">
+        <img src="assets/img/instrucao.png"  alt="" width="50" height="50">
+            
+        </div>
+        <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <div class="custom-text-etapa">
+                <strong>Introdução  dos parâmetros de referência</strong> 
+            </div>
         </div>
     </div>
-    </div>
-</div>
 <hr/>
     <form method="post" action="{{ route('malaria.do_calculo') }}"  >
     @csrf
