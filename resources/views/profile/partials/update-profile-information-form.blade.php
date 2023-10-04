@@ -103,14 +103,12 @@
 
     <div class="col form-group has-validation">
       <p>Ocupação</p>
-        <select id="dv_ocupational_fiels" class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="program_id" required>
-        @foreach($programas as $programa)
-          @if($user->programa_id==$programa->id)
-        <option value="{{$programa->id}}" selected>{{$programa->descrption}}</option>
-          @else
-          <option value="{{$programa->id}}" selected>{{$programa->descrption}}</option>
-          @endif
-        @endforeach
+        <select id="dv_ocupational_fiels" class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="ocupacao" required>
+       @if($user->category_id)
+        <option value="{{$user->category->id}}" selected>{{$user->category->description}}</option>
+      
+        @endif
+         
         </select>
         <div class="invalid-feedback">
           Por favor selecione Ocupação
@@ -136,27 +134,7 @@
 </div>
 
 <script>
-  (function () {
-    'use strict'
-   console.log('Inicializar JS')
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms).forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-            console.log('Inicializar JS 2')
-          if (!form.checkValidity()) {
-            //event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          //form.classList.add('was-validated')
-        }, false)
-      })
-      
-
-      
+ 
       document.getElementById('dv_enquadramento').addEventListener('change', function(event) {
         const enquadramento_code = event.target.value
         console.log('You selected: ', enquadramento_code)
@@ -172,17 +150,19 @@
 
       
     document.getElementById('dv_pro_required_fiels').addEventListener('change', function(event) {
-          const area_id = event.target.value
-          fetch(`/categories/${area_id}`)
+          const area_id = event.target.value;
+
+        
+          fetch(`/cat/${area_id}`)
           .then((response) => response.json())
           .then((json_array) => {
             var dv_ocupational_fiels = document.getElementById("dv_ocupational_fiels");
-            dv_ocupational_fiels.innerText = null;
-            var opt = document.createElement('option');
-            opt.value = "";
-            opt.innerHTML = "Ocupação";
-            dv_ocupational_fiels.appendChild(opt);
-
+           dv_ocupational_fiels.innerText = null;
+           var opt = document.createElement('option');
+           opt.value = "";
+           opt.innerHTML = "Ocupação";
+           dv_ocupational_fiels.appendChild(opt);
+            console.log(json_array);
             json_array.forEach(element => {
               var opt = document.createElement('option');
               opt.value = element.id;
@@ -198,7 +178,7 @@
 
 
 
-  })()
+ // })()
 
   </script>
 

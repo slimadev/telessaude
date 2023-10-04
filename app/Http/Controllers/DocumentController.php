@@ -31,11 +31,11 @@ class DocumentController extends Controller
     {
       // Show a single resource.
       $document = Document::find($request->input('id'));
-
+      
     return view('documents.show', ['document' => $document]);
 
     }
-
+  
 
     public function update(Request $req){
       
@@ -50,8 +50,9 @@ class DocumentController extends Controller
            
 
             $documentModel->name = $req->input('name');
+            //$documentModel->id = $req->input('id');
             $documentModel->save();
-            return redirect()->route('documents.start');
+            return view('documents.show', ['document'=>$documentModel])->with("message", "Documento carregado com sucesso!");
             
         }
    }

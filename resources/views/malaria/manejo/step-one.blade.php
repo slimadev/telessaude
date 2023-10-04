@@ -15,7 +15,8 @@
 
     <div class="custom-resoultcontent">
     <img src="assets/img/VECTOR1.png"  alt="" width="200" height="200"/>
-    
+   
+    <p class="custom-text-result">A febre ou história de febre é um sinal ou sintoma importante na suspeita da malária</p>
     </div>
     <br/>
     <hr/>

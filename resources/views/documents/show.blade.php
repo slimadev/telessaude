@@ -17,6 +17,14 @@
     <div class="reply-form" id="dvStepOne" style="display:">
     <div class="instruction">
           <div class="row">
+                  @if(isset($message))
+                      <div class="alert alert-success">
+                          {{$message}}
+                      </div>
+                  @endif
+
+
+          
               <div class="col-lg-1 d-flex flex-row justify-content-end">
               <img src="assets/img/instrucao.png"  alt="" width="50" height="50">
                   

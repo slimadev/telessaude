@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/logo_elessaude.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/assets/img/logo_elessaude.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -45,7 +45,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class=" d-flex align-items-center">
-        <img src="assets/img/logo.svg" alt="" width="300">
+        <img src="../assets/img/logo.svg" alt="" width="300">
       </a>
 
       <nav id="navbar" class="navbar">
@@ -110,18 +110,34 @@
                     <a href="{{ url('/malaria_manejo') }}">Manejo da malária</a>
                 </li>
                 <li>
-                  <a href="{{ url('/users') }}">Procedimento de Testes Rápidos</a>
+                  <a href="{{ url('/procedimentos') }}">Procedimento de Testes Rápidos</a>
                 </li>
                 <li>
-                    <a href="{{ url('/documents') }}">Procedimento de Preparação de Artesunato</a>
+                    <a href="{{ url('/preparacao') }}">Procedimento de Preparação e Administração do Artesunato</a>
                 </li>
                 
               </ul>
             </li>
 
+            <li class="dropdown ">
+              <a href="#" > <span >
+              Tuberculose
+              </span> <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+              <li>
+                  <a href="{{ url('/tuberculose_manejo_ca') }}">Rastreio e diagnóstico </a>
+                </li>
+                <li>
+                    <a href="{{ url('/tuberculose_tratamento_curativo') }}">Tratamento curativo</a>
+                </li>
+                <li>
+                  <a href="{{ url('/tuberculose_tratamento_preventivo') }}">Tratamento preventivo</a>
+                </li>
+                
+              </ul>
+            </li>
 
-
-          <li><a class="nav-link scrollto" href="#contact">Tuberculose</a></li>
           <li class="dropdown ">
             <a href="#" > <span >
             <img src="assets/img/account.png" alt="" width="50">
@@ -187,7 +203,9 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
+  <!-- <script src="assets/vendor/gojs/go.js"></script> -->
+  
+  
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/form_validate.js"></script>

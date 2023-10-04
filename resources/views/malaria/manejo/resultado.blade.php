@@ -14,8 +14,9 @@
     <div class="d-flex align-items-start tab" >
         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="bi bi-journal-minus"></i> &nbsp;&nbsp Negativo</button>
-            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="bi bi-journal-check"></i>&nbsp;&nbsp Malária não complicada</button>
-            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="bi bi-journal-plus"></i>&nbsp;&nbsp Malária complicada/Grave</button>
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="bi bi-journal-check"></i>&nbsp;&nbsp Positivo - Malária não complicada</button>
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="bi bi-journal-plus"></i>&nbsp;&nbsp Positivo - Malária complicada</button>
+            <button class="nav-link" id="indeterminado-tab" data-bs-toggle="pill" data-bs-target="#indeterminado" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="bi bi-journal-plus"></i>&nbsp;&nbsp Indeterminado</button>
         </div>
         <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
@@ -27,12 +28,16 @@
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
             @include('malaria.manejo.resultado3')
             </div>
+            <div class="tab-pane fade" id="indeterminado" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+            @include('malaria.manejo.resultado4')
+            </div>
         </div>
     </div>
-    <div class="col" >
-    <hr/>
-    <a class="btn btn-primary" href="{{ url('/malaria_manejo') }}">Recomeçar</a> 
+    <!--
+    <div class="custom-resoultcontent">
+        <img src="assets/img/VECTOR8.png"  alt="" width="200" height="200"/>
+        <div class="custom-text-result">Para solução <strong>Via Endovenosa (IV)</strong>, pacientes com peso <strong>25</strong> kg <br/> deve ser administrada dose de  <strong>100</strong><div>
     </div>
-     
+-->
 </div>
 

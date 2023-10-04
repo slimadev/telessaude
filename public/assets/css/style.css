@@ -2580,3 +2580,27 @@ font-size: 13px;}
   border-left-style: solid;
   border-width: 1px;
 }
+
+.result-tuberculose-form {
+  margin-top: 30px;
+  padding: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+.result-tuberculose-form .btn-primary {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 0;
+  height: 60px;
+  background-color: #012970;
+}
+
+.result-tuberculose-item {
+  padding: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  box-sizing: border-box;
+  border: #b0b2b2;
+  border-width: 1px;
+}
+

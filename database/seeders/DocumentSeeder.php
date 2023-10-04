@@ -19,8 +19,6 @@ class DocumentSeeder extends Seeder
         error_log('Carregando documentos .....');
 
         foreach ($documents as &$document) {
-            //print_r($document['key']);
-            //print_r($document['values']);
             error_log('Criando  '.$document['key']['descrption']);
             DB::beginTransaction();
             try {
@@ -31,7 +29,6 @@ class DocumentSeeder extends Seeder
             } catch (\Exception $e) {
                 DB::rollback();
                 error_log('Caiu no erro criando  '.$document['key']['descrption']);
-                // something went wrong
             }
         }
     }

@@ -13,6 +13,7 @@
 
     <div class="custom-resoultcontent">
     <img src="assets/img/VECTOR4.png"  alt="" width="200" height="200"/>
+    <p class="custom-text-result">O peso é um sinal ou sintoma importante na suspeita da malária</p>
     </div>
     <br/>
     <hr/>

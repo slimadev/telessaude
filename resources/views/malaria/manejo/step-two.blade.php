@@ -14,6 +14,7 @@
     <div class="custom-resoultcontent">
     <div class="custom-text-result"><strong>Malária não complicada</strong></div>
     <img src="assets/img/VECTOR2.png"  alt="" width="200" height="200"/>
+    
     <div class="card mb-3" style="min-width: 540px;">
   <div class="row g-0" >
     <div class="col-md-2 d-flex flex-col align-items-center">

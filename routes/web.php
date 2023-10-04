@@ -8,6 +8,8 @@ use App\Http\Controllers\DashbordController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MalariaController;
+use App\Http\Controllers\ProcedimentosController;
+use App\Http\Controllers\TuberculoseController;
 
 
 /*
@@ -68,7 +70,18 @@ Route::get('usage_statistics', [DashbordController::class, 'statistic'])
 
 
 Route::get('user_statistics', [DashbordController::class, 'users'])
-                ->name('user_statistics');              
+                ->name('user_statistics');    
+
+Route::get('reset', [UserController::class, 'reset'])
+                ->name('reset_password');  
+
+Route::post('resetPost', [UserController::class, 'resetPost'])
+                ->name('reset_password_p'); 
+Route::post("resetPasswordPost", [UserController::class, 'resetPasswordPost'])
+            ->name("reset_password_post");
+                
+Route::get('resetPostMail/{token}/{email}', [UserController::class, 'resetPostMail'])
+                ->name('reset_post_mail'); 
 
 Route::get('statistics_dashboard/{year}', [DashbordController::class, 'buildDashboard']);
 Route::get('user_statistics_dashboard', [DashbordController::class, 'buildUsersDashboard']);
@@ -79,6 +92,9 @@ Route::post('documents_show', [DocumentController::class, 'show'])
 Route::post('users_show', [UserController::class, 'show'])
                 ->name('users_show');
 
+Route::get('/cat/{area_id}', [ProfileController::class, 'cat'])
+                ->name('cat');
+
 Route::middleware('auth')->group(function () {
     Route::get('/malaria_calculo', [MalariaController::class, 'calculo'])->name('malaria.calculo');
     Route::post('/malaria_calculo', [MalariaController::class, 'do_calculo'])->name('malaria.do_calculo');
@@ -87,6 +103,26 @@ Route::middleware('auth')->group(function () {
 Route::middleware('auth')->group(function () {
     Route::get('/malaria_manejo', [MalariaController::class, 'manejo'])->name('malaria.manejo');
     Route::post('/malaria/manejo', [MalariaController::class, 'do_manejo'])->name('malaria.do_manejo');
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/procedimentos', [ProcedimentosController::class, 'procedimentos'])->name('procedimentos');
+    Route::get('/preparacao', [ProcedimentosController::class, 'preparacao'])->name('preparacao');
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/tuberculose_manejo_ca', [TuberculoseController::class, 'manejo_ca'])->name('tuberculose.manejo_ca');
+    Route::post('/tuberculose_manejo_ca', [TuberculoseController::class, 'do_manejo'])->name('tuberculose.do_manejo_ca');
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/tuberculose_tratamento_curativo', [TuberculoseController::class, 'tratamento_curativo'])->name('tuberculose.tratamento_curativo');
+    Route::post('/tuberculose_tratamento_curativo', [TuberculoseController::class, 'do_tratamento_curativo'])->name('tuberculose.do_tratamento_curativo');
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/tuberculose_tratamento_preventivo', [TuberculoseController::class, 'tratamento_preventivo'])->name('tuberculose.tratamento_preventivo');
+    Route::post('/tuberculose_tratamento_preventivo', [TuberculoseController::class, 'do_tratamento_preventivo'])->name('tuberculose.do_tratamento_preventivo');
 });
                 
 

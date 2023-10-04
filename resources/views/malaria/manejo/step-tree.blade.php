@@ -6,9 +6,10 @@
     </div>
     <div class="custom-resoultcontent">
     <img src="assets/img/VECTOR8.png"  alt="" width="200" height="200"/>
-    <div class="custom-text-result"><strong>Realizar o teste:</strong></div>
+   
     <br/>
-    <div class="custom-text-result"><i class="bi bi-brightness-low-fill"></i>Teste rápido/mioscopia</div>
+    <div class="custom-text-result"><i class="bi bi-brightness-low-fill"></i>Teste rápido </p><i class="bi bi-brightness-low-fill"></i>Mioscopia</div>
+
     </div>
     <br/>
     <hr/>

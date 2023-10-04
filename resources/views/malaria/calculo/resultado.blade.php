@@ -12,7 +12,7 @@
         </div>
     <div class="custom-resoultcontent">
     <img src="assets/img/VECTOR8.png"  alt="" width="200" height="200"/>
-    <div class="custom-text-result">Para solução <strong>{{ $via }}</strong>, pacientes com peso <strong>{{ $peso }}</strong> kg <br/> deve ser administrada dose de  <strong>{{ $resultado }} ML</strong><div>
+    <div class="custom-text-result">Para solução <strong>{{ $via }}</strong>, pacientes com peso <strong>{{ $peso }}</strong> kg <br/> deve ser administrada dose de  <strong>{{ $resultado }} ml</strong><div>
     </div>
     
 </div>

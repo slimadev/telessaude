@@ -2,12 +2,26 @@ $(document).ready(function(){
   let MALARIA_TEXT_INDEX = 0
   const MALARIA_TEXTS = [
     'Febre < 39ᵒC',
-    'Cefaleia',
-    'Mialgia',
-    'Artralgia',
-    'Frio',
+    'Cefaleia (dor de cabeça)',
+    'Mialgia (dor muscular)',
+    'Artralgia (dor articular)',
+    'Calafrio',
     'Dor abdominal'
   ]
+
+  let MALARIA_TEXT_INDEX1 = 0
+  const MALARIA_TEXTS1 = [
+    'Febre >=39ᵒC',
+    'Mal-Estar',
+    'Fraqueza Generalizada',
+    'Alteração da consciência',
+    'Hipoglicemia',
+    'Convulsões',
+    'Anemia',
+    'Dificuldade respiratória',
+    'Icterícia; urina escura'
+  ]
+
 
   $("#btnMalariaNext").click(function(e){
     e.preventDefault()
@@ -30,6 +44,30 @@ $(document).ready(function(){
     }
     
    });
+
+
+   $("#btnMalariaNext1").click(function(e){
+    e.preventDefault()
+    console.log('Clicou: ',MALARIA_TEXT_INDEX1)
+    if(MALARIA_TEXTS1.length > MALARIA_TEXT_INDEX1+1){
+      MALARIA_TEXT_INDEX1 = MALARIA_TEXT_INDEX1 +1
+      $('#malariaStepTwoTest1').empty()
+      $('#malariaStepTwoTest1').append(`<strong>${MALARIA_TEXTS1[MALARIA_TEXT_INDEX1]}</strong>`)
+    }
+    
+    
+   });
+
+   $("#btnMalariaBack1").click(function(e){
+    e.preventDefault()
+    if(MALARIA_TEXT_INDEX1 > 0){
+      MALARIA_TEXT_INDEX1 = MALARIA_TEXT_INDEX1 -1
+      $('#malariaStepTwoTest1').empty()
+      $('#malariaStepTwoTest1').append(`<strong>${MALARIA_TEXTS1[MALARIA_TEXT_INDEX1]}</strong>`)
+    }
+    
+   });
+
 
   $("#btnStepOne").click(function(e){
     e.preventDefault()

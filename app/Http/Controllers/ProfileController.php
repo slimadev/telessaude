@@ -19,18 +19,28 @@ class ProfileController extends Controller
      */
     public function edit(Request $request): View
     {
+        $cat_id=$request->input("categoria_id");
+
+     
         $provincies = SimpleEntity::where('type', 'PROVINCIA')->get();
         $frames = SimpleEntity::where('type', 'ENQUADRAMENTO')->get();
         $categories = SimpleEntity::where('type', 'CATEGORIA')->get();
-        $programas = SimpleEntity::where('type', 'PROGRAMA')->get();
+        $pro_categories = ProfessionalCategory::where('area_id', $cat_id)->get();
 
         return view('profile.edit', [
             'user' => $request->user(),
             'provincies'=>$provincies,
             'frames'=>$frames,
             'categories'=>$categories,
-            'programas'=>$programas,
+            'pro_categories'=>$pro_categories,
         ]);
+    }
+
+
+    public function cat($area_id)
+    {
+        $categories = ProfessionalCategory::where('area_id',$area_id)->get(); 
+        return $categories;
     }
 
     /**
@@ -53,8 +63,8 @@ class ProfileController extends Controller
             $user->framing_id=$framing->id;
             $user->email = $request->input('email');
             $user->province_id = $request->input('province_id');
-            $user->category_id = $request->input('category_id');
-            $user->program_id = $request->input('program_id');
+           
+            $user->category_id = $request->input('ocupacao');
             $user->nuit = $request->input('nuit');
 
            
@@ -62,7 +72,7 @@ class ProfileController extends Controller
         
         $user->save();
  
-         return Redirect::route('profile.edit')->with('message', 'Dados alterados com sucesso!');
+         return Redirect::route('profile.edit')->compact('Dados alterados com sucesso!');
      }
 
 

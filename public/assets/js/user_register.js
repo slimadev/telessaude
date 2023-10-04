@@ -18,7 +18,6 @@
       })
       
 
-      
       document.getElementById('dv_enquadramento').addEventListener('change', function(event) {
         const enquadramento_code = event.target.value
         console.log('You selected: ', enquadramento_code)
@@ -31,7 +30,6 @@
         }
 
     });
-
       
     document.getElementById('dv_pro_required_fiels').addEventListener('change', function(event) {
           const area_id = event.target.value
@@ -61,3 +59,5 @@
 
 
   })()
+
+ 

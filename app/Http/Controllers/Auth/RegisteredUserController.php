@@ -78,4 +78,6 @@ class RegisteredUserController extends Controller
         return $categories;
     }
 
+   
+
 }

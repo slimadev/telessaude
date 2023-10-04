@@ -58,4 +58,9 @@ class User extends Authenticatable
     {
         return $this->belongsTo(SimpleEntity::class,'program_id');
     }
+
+    public function category()
+    {
+        return $this->belongsTo(ProfessionalCategory::class,'category_id');
+    }
 }
