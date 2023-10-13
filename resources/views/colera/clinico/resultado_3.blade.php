@@ -37,13 +37,13 @@
             
             <ol>
             <li>
-            <a href="{{url('/downloadr/Anexo II')}}">Tabela de reidratação em crianças com mais de 5 anos e adultos  consultar anexo II </a> 
+            <a href="{{url('/downloadr/Anexo II')}}">Tabela de reidratação em crianças com mais de 5 anos e adultos  </a> 
             </li>
             <li>
-            <a href="{{url('/downloadr/Anexo III')}}"> Tabela de reidratação em crianças com menos de 5 anos consultar anexo III </a>
+            <a href="{{url('/downloadr/Anexo III')}}"> Tabela de reidratação em crianças com menos de 5 anos  </a>
             </li>
             <li>
-            <a href="{{url('/downloadr/Anexo IV')}}">Tabela de reidratação em crianças desnutridas  consultar anexo IV </a>
+            <a href="{{url('/downloadr/Anexo IV')}}">Tabela de reidratação em crianças desnutridas  </a>
             </li>
             </ol>
         @elseif($has_pregnant ==1)

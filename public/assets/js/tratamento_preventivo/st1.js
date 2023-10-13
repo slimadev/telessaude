@@ -23,21 +23,6 @@ $(document).ready(function(){
       child:'',
       tb:'st1tb4'
     },
-    {
-      parent:'Dosagem dos MATs para Tratatamento de TB-S em Crianças e Adolescentes ≤25kg (formulações Pediátricas)', 
-      child:'Tratamento de TB infantil ( Crianças dos 4-24.9 kgs)',
-      tb:'st1tb5'
-    },
-    {
-      parent:'Monitoria do Tratamento de TB Sensível', 
-      child:'',
-      tb:'st1tb6'
-    },
-    {
-      parent:'Monitoria do Tratamento de TB Sensível', 
-      child:'Calendário de Seguimento da Criança em TAT para TB-S',
-      tb:'st1tb7'
-    }
   ]
 
   $("#btnst1Next").click(function(e){
@@ -125,7 +110,7 @@ $(document).ready(function(){
 
   $("#btnst2Next").click(function(e){
     e.preventDefault()
-    if(STEP_TWO_TEXTS.length > STEP_FOUR_TEXT_INDEX+1){
+    if(STEP_TWO_TEXTS.length > STEP_TWO_TEXT_INDEX+1){
       const currentStep = STEP_TWO_TEXT_INDEX
       STEP_TWO_TEXT_INDEX = STEP_TWO_TEXT_INDEX +1
 
@@ -163,7 +148,13 @@ $(document).ready(function(){
    $("#btnStepOne").click(function(e){
     $("#dvStepOne").css("display", "none");
     $("#dvStepTwo").css("display", "");
-    
+    console.log("AQUI.... tambem")
+    fetch(`/tuberculose_dashboard`)
+          .then((response) => response.json())
+          .then((json_data) => {
+            console.log(json_data)
+
+    });
    });
 
    $("#btnStepTwoBack").click(function(e){

@@ -11,14 +11,15 @@ $(document).ready(function(){
   
    })
 
-   let teste="<strong>a) O teste</strong>";
-   let tubo="<strong>b) O Tubo capilar</strong>";
-   let desinfectante="<strong>c) Desinfectante</strong>";
+   let teste="<strong>Teste</strong>";
+   let tubo="<strong>Tubo capilar (copo invertido)</strong>";
+   let desinfectante="<strong>Desinfectante</strong>";
   
 
 let index =0; 
 const SLIDES=[
-{'nome':teste, 'imagem':'assets/img/kit.png'},{'nome':tubo, 'imagem':'assets/img/tubo_capilar.png'},
+{'nome':teste, 'imagem':'assets/img/kit.png'},
+{'nome':tubo, 'imagem':'assets/img/tupo_copoinvertido.png'},
 {'nome':desinfectante, 'imagem':'assets/img/alcool.png'}
 ]
 

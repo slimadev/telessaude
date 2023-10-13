@@ -1247,7 +1247,7 @@
         </div>
 
         <div class="table-responsive" id="st2tb8" style="display:none">
-            <table class="table text-center table-bordered" style="font-size: 14px;">
+            <table class="table text-center table-bordered" style="font-size: 13px;">
             <thead>
             <tr>
                 <th rowspan="2"><br>Consulta clínica</th>
@@ -1255,7 +1255,7 @@
                 <th  class="table-primary">7º dia</th>
                 <th  class="table-primary">15º dia</th>
                 <th  class="table-primary">1º mês</th>
-                <th  class="table-primary">45ºdia</th>
+                <th  class="table-primary">45º dia</th>
                 <th  class="table-primary">2º mês</th>
                 <th  class="table-primary">3º mês</th>
                 <th  class="table-primary">4º mês</th>

@@ -1,25 +1,24 @@
 $(document).ready(function(){
   let MALARIA_TEXT_INDEX = 0
   const MALARIA_TEXTS = [
-    'Febre < 39ᵒC',
     'Cefaleia (dor de cabeça)',
     'Mialgia (dor muscular)',
     'Artralgia (dor articular)',
-    'Calafrio',
+    'Calafrio (dor de cabeça)',
     'Dor abdominal'
   ]
 
   let MALARIA_TEXT_INDEX1 = 0
   const MALARIA_TEXTS1 = [
-    'Febre >=39ᵒC',
-    'Mal-Estar',
-    'Fraqueza Generalizada',
-    'Alteração da consciência',
-    'Hipoglicemia',
-    'Convulsões',
-    'Anemia',
+    'Prostração (doente não consegue sentar e andar)',
+    'Anemia grave (palidez das mucosas e palma das mãos e/ou hemoglobina < 5gr/dl em crianças)',
+    'Alteração da consciência (Glasgow <11 em Adultos e Blantyre <3 em crianças)',
+    'Insuficiência renal aguda (redução da diurese)',
+    'Convulções repetidas (>2 episódios em 24h)',
+    'Hipoglicémia (glicémia <2,2mmol/l ou 40mg/dl)',
     'Dificuldade respiratória',
-    'Icterícia; urina escura'
+    'Icterícia',
+    'Urina escura'
   ]
 
 
@@ -104,9 +103,16 @@ $(document).ready(function(){
 
    
    $("#btnStepTwoOne").click(function(e){
-    console.log("btnStepTwo")
+    
     $("#dvStepThree").css("display", "");
     $("#dvStepTwoOne").css("display", "none");
+    fetch(`/malaria_dashboard`)
+        .then((response) => response.json())
+        .then((json_data) => {
+          console.log(json_data)
+
+    });
+    console.log("Aqui no btnStepTwo Dash actualizado")
    });
 
    $("#btnStepTwoOneBack").click(function(e){
@@ -121,11 +127,13 @@ $(document).ready(function(){
     
    });
 
+   /*
    $("#btnStepThree").click(function(e){
     $("#dvResultado").css("display", "");
     $("#dvStepThree").css("display", "none");
     
    });
+*/
 
 });
 

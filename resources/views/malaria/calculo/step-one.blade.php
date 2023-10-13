@@ -7,7 +7,7 @@
         </div>
         <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <div class="custom-text-etapa">
-                <strong>Introdução  dos parâmetros de referência</strong> 
+                <strong>Introdução de parâmetros de referência</strong> 
             </div>
         </div>
     </div>
@@ -31,10 +31,10 @@
 </div>
 </div>
 <br/>
-<p><strong>Peso corporal </strong> </p>
+<p><strong>Peso corporal (Kg)</strong> </p>
 <div class="row">
 <div class="col form-group">
-    <input name="peso" type="number" class="form-control" placeholder="Peso corporal" required/>
+    <input name="peso" min="1" type="number" step="any" class="form-control" placeholder="Peso corporal" required/>
 </div>
 </div>
 <br/>

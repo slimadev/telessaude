@@ -31,7 +31,7 @@
                 4ª dose: 24 horas depois da 3ª dose
             </li>
             <li>
-                45ª dose e doses seguintes: 24 em 24 horas
+                5ª dose e doses seguintes: 24 em 24 horas
             </li>
             
             </ul>

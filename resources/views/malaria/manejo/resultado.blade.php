@@ -30,9 +30,11 @@
             </div>
             <div class="tab-pane fade" id="indeterminado" role="tabpanel" aria-labelledby="v-pills-messages-tab">
             @include('malaria.manejo.resultado4')
+            
             </div>
         </div>
     </div>
+
     <!--
     <div class="custom-resoultcontent">
         <img src="assets/img/VECTOR8.png"  alt="" width="200" height="200"/>
@@ -40,4 +42,6 @@
     </div>
 -->
 </div>
+
+
 

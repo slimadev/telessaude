@@ -6,14 +6,14 @@
         </div>
         <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <div class="custom-text-etapa">
-            <strong>PASSO 3:</strong>  Abra o Kit e retire 
+            <strong>PASSO 3:</strong> Retire a cassete 
             </div>
         </div>
     </div>
 
     <div class="custom-resoultcontent">
     <!--<div class="custom-text-result" style="color:red;"><strong>Positivo-Malária complicada/grave</strong></div>-->
-    <img id='imgSlThree'  alt="" width="300" height="150" class='dist'/>
+    <img id='imgSlThree'  alt=""  class='dist'/>
    
     <div class="card mb-3" style="min-width: 540px;">
   <div class="row g-0" >

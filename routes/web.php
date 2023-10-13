@@ -103,6 +103,7 @@ Route::middleware('auth')->group(function () {
 Route::middleware('auth')->group(function () {
     Route::get('/malaria_manejo', [MalariaController::class, 'manejo'])->name('malaria.manejo');
     Route::post('/malaria/manejo', [MalariaController::class, 'do_manejo'])->name('malaria.do_manejo');
+    Route::get('/malaria_dashboard', [MalariaController::class, 'user_dashboard'])->name('malaria.user_dashboard');
 });
 
 Route::middleware('auth')->group(function () {
@@ -122,7 +123,7 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/tuberculose_tratamento_preventivo', [TuberculoseController::class, 'tratamento_preventivo'])->name('tuberculose.tratamento_preventivo');
-    Route::post('/tuberculose_tratamento_preventivo', [TuberculoseController::class, 'do_tratamento_preventivo'])->name('tuberculose.do_tratamento_preventivo');
+    Route::get('/tuberculose_dashboard', [TuberculoseController::class, 'user_dashboard'])->name('tuberculose.user_dashboard');
 });
                 
 

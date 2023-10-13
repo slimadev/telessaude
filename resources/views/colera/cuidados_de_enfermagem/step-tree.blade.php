@@ -7,14 +7,14 @@
     </div>
     <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
         <p>
-        <strong>Avaliação do grau de desidratação::</strong>  número de dejecções, vómitos, diurese, urina, condição mental, pulso, olhos, sede, respiração, prega cutânea.
+        <strong>Avaliação do grau de desidratação:</strong>  número de dejecções, vómitos, diurese, urina, condição mental, pulso, olhos, sede, respiração, prega cutânea.
         </p>
     </div>
     </div>
 </div>
 <hr/>
-                <form method="post" action="{{ route('colera.submit') }}"  >
-                @csrf
+    <form method="post" action="{{ route('colera.submit') }}"  >
+    @csrf
 
 <p>Número de dejecções/dia? </p>
 <div class="col form-group">
@@ -73,7 +73,7 @@
     <select class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="st3_respiracao">
     <option value="2">Normal</option>
     <option value="3">Rápida</option>
-    <option value="3">Muito rápida e profunda</option>
+    <option value="4">Muito rápida e profunda</option>
     </select>
 </div>
 <p>Prega cutânea? </p>
@@ -81,7 +81,7 @@
     <select class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="st1_cutanea">
     <option value="2">Regride rapidamente</option>
     <option value="3">Regride lentamente (< 2 segundos)</option>
-    <option value="3">Regride muito lentamente (> 2 segundos)</option>
+    <option value="4">Regride muito lentamente (> 2 segundos)</option>
     </select>
 </div>
 <input type="hidden" name="step" value="{{$step }}">

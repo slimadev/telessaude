@@ -6,13 +6,12 @@
         </div>
         <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <div class="custom-text-etapa">
-            <strong>ETAPA 2:</strong>  Avaliação dos seguintes sinais e sintomas da severidade da malária
+            <strong>ETAPA 2:</strong>  Avaliação de outros sinais e sintomas
             </div>
         </div>
     </div>
 
     <div class="custom-resoultcontent">
-    <div class="custom-text-result"><strong>Malária não complicada</strong></div>
     <img src="assets/img/VECTOR2.png"  alt="" width="200" height="200"/>
     
     <div class="card mb-3" style="min-width: 540px;">
@@ -35,7 +34,6 @@
     </div>
     <br/>
     <hr/>
-    <button type="submit" class="btn btn-primary" id="btnStepTwoBack">Anterior</button>
+    <button type="submit" class="btn btn-primary" id="btnStepOne">Anterior</button>
     <button type="submit" class="btn btn-primary" id="btnStepTwo">Próximo</button>
 </div>
-

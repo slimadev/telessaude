@@ -13,34 +13,35 @@ $(document).ready(function(){
 
      let info="<div id='info'>";
                info+="<div class='mb-3' id='infoOne'>"; 
-               info+="<p>POSITIVO(P.Falsiparum)</p>";
-               info+="<img src='assets/img/teste_positivo.png'  alt='' width='300' height='100'/>";
+               info+="<p><strong>Resultado Positivo (P.Falciparum)</strong></p>";
+               info+="<img src='assets/img/teste_positivo.png'  alt='' width='350' height='120'/>";
                info+="</div>";
                info+="<div id='infoTwo'>";
-               info+='<p>A linha “C” e “Pf” estão presentes(mesmo sendo a linha "pf" fraca)</p>';
+               info+='<p>A linha “C” e “P.f” estão presentes</p>';
                info+="<img src='assets/img/teste_linha_c.png'  alt='' width='300' height='100'/>";
+               info+='<p>A linha “C” e “P.f” estão presentes (mesmo sendo a linha "P.f" fraca)</p>';
                info+="</div>";
                info+="</div>";
 
 
      let info1="<div id='info'>";
      info1+="<div class='mb-3' id='infoOne'>"; 
-     info1+="<p>NEGATIVO</p>";
-     info1+='<p>A linha “C” está presente mas linha "pf" não aparece</p>';
-     info1+="<img src='assets/img/teste_negativo.png'  alt='' width='200' height='70'/>";
+     info1+="<p><strong>Resultado Negativo</strong></p>";
+     info1+="<img src='assets/img/teste_negativo.png'  alt='' width='350' height='120'/>";
+     info1+='<p>A linha “C” está presente mas linha "P.f" não aparece</p>';
      info1+="</div>";
      info1+="</div>";
 
 
      let info2="<div id='info'>";
      info2+="<div class='mb-3' id='infoOne'>"; 
-     info2+="<p>RESULTADO INVALIDO</p>";
-     info2+="<img src='assets/img/teste_positivo.png'  alt='' width='300' height='150'/>";
-     info2+="<p>A linha “C” e “Pf” não estão presentes</p>";
+     info2+="<p><strong>Resultado Inválido </strong></p>";
+     info2+="<img src='assets/img/teste_invalido.png'  alt='' width='350' height='120'/>";
+     info2+="<p>A linha “C” e “P.f” não estão presentes</p>";
      info2+="</div>";
      info2+="<div id='infoTwo'>";
-     info2+="<img src='assets/img/teste_linha_c.png'  alt='' width='300' height='150'/>";
-     info2+='<p>Só está presente a linha “Pf”. O teste deve estar repetido</p>';
+     info2+="<img src='assets/img/teste_invalido_linha_c.png'  alt='' width='300' height='150'/>";
+     info2+='<p>Só está presente a linha “P.f”. O teste deve ser repetido</p>';
      info2+="</div>";
      info2+="</div>";
        

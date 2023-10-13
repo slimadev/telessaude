@@ -6,13 +6,12 @@
         </div>
         <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <div class="custom-text-etapa">
-            <strong>ETAPA 2:</strong>  Avaliação dos seguintes sinais e sintomas da severidade da malária
+            <strong>ETAPA 3:</strong>  Avaliação dos sinais gerais de perigo
             </div>
         </div>
     </div>
 
     <div class="custom-resoultcontent">
-    <div class="custom-text-result" style="color:red;"><strong>Malária complicada/grave</strong></div>
     <img src="assets/img/VECTOR5.png"  alt="" width="200" height="200"/>
    
     <div class="card mb-3" style="min-width: 540px;">
@@ -26,7 +25,7 @@
         <p class="card-text">
           <div class="custom-text-result" id="malariaStepTwoTest1">
             <strong>
-                Febre >=39ᵒC
+                Mialgia (dor muscular)
             </strong>
           </div>
         </p>

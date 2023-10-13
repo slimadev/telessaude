@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 let index =0; 
 const SLIDES=[
-{'nome':slideOne, 'imagem':'assets/img/teste_linha_c.png'}
+{'nome':slideOne, 'imagem':'assets/img/descarte_tubo_capilar.png'}
 ]
 
 $("#dvStepTen").css('display','none');

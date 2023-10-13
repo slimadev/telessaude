@@ -44,7 +44,7 @@
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class=" d-flex align-items-center">
+      <a href="{{ url('/') }}" class=" d-flex align-items-center">
         <img src="../assets/img/logo.svg" alt="" width="300">
       </a>
 
@@ -104,9 +104,6 @@
               </a>
               <ul>
               <li>
-                  <a href="{{ url('/malaria_calculo') }}">Cálculo da dose de artesunato</a>
-                </li>
-                <li>
                     <a href="{{ url('/malaria_manejo') }}">Manejo da malária</a>
                 </li>
                 <li>
@@ -116,6 +113,9 @@
                     <a href="{{ url('/preparacao') }}">Procedimento de Preparação e Administração do Artesunato</a>
                 </li>
                 
+              <li>
+                  <a href="{{ url('/malaria_calculo') }}">Cálculo da dose de artesunato</a>
+                </li>
               </ul>
             </li>
 

@@ -111,19 +111,16 @@ class ColeraService
     public static function  GET_PAGE_AND_CONTEXT($request){
         $has_anormal_signal = $request->input('has_anormal_signal');
         $has_anormal_rate = $request->input('has_anormal_rate');
-        $has_anormal_step_3 = self::HAS_ANORMAL_SIGNAL_IN_STEP_3($request);
+        $has_anormal_step_3 = $request->input('has_anormal_step_3');
         $is_child = $request->input('is_child');
         $has_pregnant= $request->input('has_pregnant');
         $all_filled_data = $request->input('all_filled_data');
-
         $all_filled_data_array = json_decode($all_filled_data, true);
         
         $next_step = 41;
-        if($has_anormal_signal==0 && $has_anormal_step_3){
+        if($has_anormal_signal==0 && $has_anormal_step_3>1){
             $next_step = 42;
-        }
-
-        if($has_anormal_signal==1 && ($has_anormal_rate==1 || $has_anormal_step_3)){
+        }elseif($has_anormal_signal==1 || $has_anormal_step_3 > 1){
             $next_step = 43;
         }
 
@@ -141,6 +138,47 @@ class ColeraService
     }
     public static function  HAS_ANORMAL_SIGNAL($months , $hart_rate, $respiratory_rate){
         return self::ANORMAL_HART_RATE($months , $hart_rate) || self::ANORMAL_RESPIRATORY_RATE($months , $respiratory_rate);
+    }
+
+    public static function  IS_ANORMAL_SIGNAL_IN_STEP_3($request){
+        $total_de_sinais = 0;
+
+        $st3_digestoes = $request->input('st3_digestoes');
+        $st3_vomitos= $request->input('st3_vomitos');
+        $st3_urina= $request->input('st3_urina');
+        $st3_mental= $request->input('st3_mental');
+        $st3_pulso= $request->input('st3_pulso');
+        $st3_olhos= $request->input('st3_olhos');
+        $st3_respiracao= $request->input('st3_respiracao');
+        $st1_cutanea= $request->input('st1_cutanea');
+
+        if($st3_digestoes == 3){
+            $total_de_sinais = $total_de_sinais+1;
+        }
+        if($st3_vomitos == 4){
+            $total_de_sinais = $total_de_sinais+1;
+        }
+        if($st3_urina == 3){
+            $total_de_sinais = $total_de_sinais+1;
+        }
+
+        if($st3_mental == 3){
+            $total_de_sinais = $total_de_sinais+1;
+        }
+        if($st3_pulso == 3){
+            $total_de_sinais = $total_de_sinais+1;
+        }
+        if($st3_olhos == 3){
+            $total_de_sinais = $total_de_sinais+1;
+        }
+        if($st3_respiracao == 3){
+            $total_de_sinais = $total_de_sinais+1;
+        }
+        if($st1_cutanea == 3){
+            $total_de_sinais = $total_de_sinais+1;
+        }
+
+        return $total_de_sinais;
     }
 
     public static function  HAS_ANORMAL_SIGNAL_IN_STEP_3($request){

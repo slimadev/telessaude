@@ -27,7 +27,7 @@
       
       <br/>
       <button type="submit" class="btn btn-primary">
-        <span>Resetar</span>
+        <span>Alterar senha</span>
             <i class="bi bi-arrow-right"></i>
           </a>
       </button>

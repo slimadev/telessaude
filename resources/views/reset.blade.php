@@ -12,7 +12,7 @@
               @endif
 <x-input-error :messages="$errors->get('email')" class="mt-2" />
  <div class="reply-form">
-    <h4>Resetar a senha</h4>
+    <h4>Alterar senha</h4>
     <form method="POST"  action="{{ route('reset_password_p') }}" class="needs-validation" id="reset_password" novalidate>
       @csrf
       <div class="col form-group has-validation">
@@ -24,7 +24,7 @@
       
       <br/>
       <button type="submit" class="btn btn-primary">
-        <span>Resetar</span>
+        <span>Submeter pedido</span>
             <i class="bi bi-arrow-right"></i>
           </a>
       </button>

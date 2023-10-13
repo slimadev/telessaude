@@ -4,7 +4,7 @@
 
         <ol>
           <li><a href="{{ url('/procedimentos') }}">Malária</a></li>
-          <li><a href="">Procedimentos de teste rapido</a></li>
+          <li><a href="">Procedimento de testes rápidos</a></li>
           
         </ol>
 
@@ -31,6 +31,7 @@
     @include('malaria.procedimentos.step-fourteen')
     @include('malaria.procedimentos.step-fifteen')
     @include('malaria.procedimentos.step-sixteen')
+    @include('malaria.procedimentos.step-seventeen')
     </div>
     </section>
     
@@ -51,6 +52,7 @@
        <script src="assets/js/procedimentosStepFourteen.js"></script>
        <script src="assets/js/procedimentosStepFifteen.js"></script>
        <script src="assets/js/procedimentosStepSixteen.js"></script>
+       <script src="assets/js/procedimentosStepSeventeen.js"></script>
     @endsection
      
 </x-app-layout>

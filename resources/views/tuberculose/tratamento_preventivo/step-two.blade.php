@@ -39,7 +39,7 @@
                     <tbody>
                         <tr>
                             <td><p> < 3Kg </p></td>
-                            <td colspan="2"><p>Enviar para avaliacao por um medico consultar momite terapeutico</p></td>
+                            <td colspan="2"><p>Enviar para avaliação por um medico consultar momite terapeutico</p></td>
 
                         </tr>
                         <tr>
@@ -120,9 +120,6 @@
         </div>
         </div>
     </div>
-
-   
-
     <br/>
     <hr/>
     <button type="submit" class="btn btn-primary" id="btnStepTwoBack">Anterior</button> 

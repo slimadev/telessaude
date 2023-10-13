@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
   let slideOne ="<strong>IV: Injecção lenta de 3-4 ml por minuto</strong>";
-  let slideTwo ="<strong>IM: Injecte lentamente. Divida as doses superiores a 5 ml em locais diferentes</strong>";
+
+  let slideTwo ="<strong>IM:</strong> Injecte lentamente <br>Divida as doses superiores a 5 ml em locais diferentes (coxas)";
   
  
         
@@ -10,7 +11,7 @@ $(document).ready(function(){
 
     let index =0; 
     const SLIDES=[
-      {'nome':slideOne, 'imagem':'assets/img/instrucao_aplicacao1.png'},{'nome':slideTwo, 'imagem':'assets/img/instrucao_aplicacao1.png'}
+      {'nome':slideOne, 'imagem':'assets/img/administrar1.png'},{'nome':slideTwo, 'imagem':'assets/img/administrar2.png'}
   ]
 
    // $("#dvStepThree").css('display','');

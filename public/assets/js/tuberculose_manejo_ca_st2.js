@@ -4,17 +4,17 @@ $(document).ready(function(){
 
   const STEP_TWO_2_TEXTS = [
     {
-      texts:['Antes de dormir, beba um copo de água e durma se almofada.'
+      texts:['Antes de dormir, beba um copo de água e durma sem almofada'
             ],
       step:'01',
     },
     {
-      texts:['Ao acordar, não coma, não beba, não fume e nem escove os dentes antes de colher a amostra.'
+      texts:['Ao acordar, não coma, não beba, não fume e nem escove os dentes antes de colher a amostra'
             ],
       step:'02',
     },
     {
-      texts:['Siga os passos de 1 a 10 da orientação da colheta de expectoração no dia da consulta.'
+      texts:['Siga os passos de 1 a 10 da orientação da colheta de expectoração no dia da consulta'
             ],
       step:'03',
     },
@@ -22,21 +22,21 @@ $(document).ready(function(){
 
   const STEP_TWO_1_TEXTS = [
     {
-      texts:['Certifique-se que no seufrasco está escrito o seu nome e a data da colheta '
+      texts:['Certifique-se que no seu frasco está escrito o seu nome e a data da colheta'
             ],
       img:'step1.png',
       step:'01',
       notes:[]
     },
     {
-      texts:['Lave a boca bochechando apenas com água (se tiver placa dentária retire-a).',
+      texts:['Lave a boca bochechando apenas com água (se tiver placa dentária retire-a)',
             ],
       img:'step2.png',
       step:'02',
       notes:[],
     },
     {
-      texts:['Relaxe e leve o tempo necessário para colher a sua expectoração.',
+      texts:['Relaxe e leve o tempo necessário para colher a sua expectoração',
             ],
       img:'step3.png',
       step:'03', 

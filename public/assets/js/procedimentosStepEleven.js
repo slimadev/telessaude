@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 let index =0; 
 const SLIDES=[
-{'nome':slideOne, 'imagem':'assets/img/tampao_poco_quadrado.png'}
+{'nome':slideOne, 'imagem':'assets/img/poco_quadrado.png'}
 ]
 
 $("#dvStepElevn").css('display','none');

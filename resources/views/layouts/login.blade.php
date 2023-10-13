@@ -42,7 +42,7 @@
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class=" d-flex align-items-center">
+      <a href="{{ url('/') }}" class=" d-flex align-items-center">
       <img src="/assets/img/logo.svg" alt="" width="300">
       </a>
 
@@ -123,7 +123,7 @@
             <p>
               4º Andar - Ministério da Saúde <br>
               Av. Eduardo Mondlane 1008<br>
-              Maputo-Moçambique <br><br>
+              Maputo-Moçambique <br>
               <strong>Telefone:</strong> (+258) 84 3434 ou 82 3434<br>
               <strong>Email:</strong> telessaudemz@gmail.com<br>
             </p>

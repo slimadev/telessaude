@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
-    
+
+  let kit ="<p>Verififcar a validade do kit</p>";
   let luvas ="<p>Luvas descartáveis</p>";
-  let tubo="<p>Tubo capilar</p>";
+  let tubo="<p>Tubo capilar (copo invertido)</p>";
   let alcool="<p>Álcool</p>";
   let relogio="<p>Relógio/cronometro</p>";
   let lanceta="<p>Lanceta</p>";
@@ -14,7 +15,14 @@ $(document).ready(function(){
 
     let index =0; 
     const SLIDES=[
-      {'nome':luvas, 'imagem':'assets/img/luvas_descataveis.png'}, {'nome':tubo, 'imagem':'assets/img/tubo_capilar.png'}, {'nome':alcool, 'imagem':'assets/img/alcool.png'},{'nome':relogio, 'imagem':'assets/img/despertador.png'},{'nome':lanceta, 'imagem':'assets/img/lanceta.png'},{'nome':tampao, 'imagem':'assets/img/tampao.png'},{'nome':bolsa, 'imagem':'assets/img/bolsa_amarela.png'}
+      {'nome':kit, 'imagem':'assets/img/Kit_embalagem.png'},
+      {'nome':luvas, 'imagem':'assets/img/luvas_descataveis.png'},
+      {'nome':tubo, 'imagem':'assets/img/tubo_capilar.png'}, 
+      {'nome':alcool, 'imagem':'assets/img/alcool.png'},
+      {'nome':relogio, 'imagem':'assets/img/despertador.png'},
+      {'nome':lanceta, 'imagem':'assets/img/lanceta.png'},
+      {'nome':tampao, 'imagem':'assets/img/tampao.png'},
+      {'nome':bolsa, 'imagem':'assets/img/bolsa_teste.png'}
   ]
 
     $("#dvStepTwoOn").css('display','');

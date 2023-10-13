@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
-  let slideOne ="<ul><li><strong>Artesunato reconstruido + cloreto de sódio (ou dextrose a 5%)</strong></li><li><strong>Volume para diluição depende da via de administração</strong></li></ul>";
-  let slideTwo ="<p>Não se esqueça de retirar o ar do frasco antes de injectar a solução salina</p>";
-  let slideThree="<p>Injectar o volume necessário de Cloreto de Sódio a solução reconstituida</p>";
-  let slideFour="<p>A solução do artesanato está agora pronto para o uso </p>";
+  let slideOne ="<strong>Volume para diluição depende da via de administração </strong>";
+  let slideTwo ="Não se esqueça de retirar o ar do frasco antes de injectar a solução salina";
+  let slideThree="Injectar o volume necessário de Cloreto de Sódio a solução reconstituida";
+  let slideFour="A solução do artesanato está agora pronto para o uso";
  
         
 
@@ -48,6 +48,13 @@ $(document).ready(function(){
     $("#dvStepThree").css('display', 'none');
     $("#dvStepFour").css('display', '');
 
+    fetch(`/malaria_dashboard`)
+    .then((response) => response.json())
+    .then((json_data) => {
+       console.log(json_data)
+
+    });
+    console.log("Aqui no preparacao..")
 
 
 })

@@ -179,7 +179,7 @@
                 <tr class="table-primary">
                     <td rowspan="2" ><b>Peso</b><b></b><b>Kg</b></td>
                     <td colspan="3" ><b>Fase Intensiva</b></td>
-                    <td ><b>Modode preparação e</b><b></b><b>posologia</b></td>
+                    <td ><b>Modo de preparação e</b><b></b><b>posologia</b></td>
                 </tr>
                 
                 <tr>
@@ -247,7 +247,7 @@
                 <tr class="table-primary">
                     <td rowspan="2" ><b>Peso</b><b></b><b>Kg</b></td>
                     <td colspan="2" ><b>Fase Intensiva</b></td>
-                    <td ><b>Modode preparação e</b><b></b><b>posologia</b></td>
+                    <td ><b>Modo de preparação e</b><b></b><b>posologia</b></td>
                 </tr>
                 
                 <tr>
@@ -339,8 +339,8 @@
         <table class="table text-center table-bordered" id="st1tb8" style="display:none">
             <thead>
                 <tr class="table-primary">
-                    <th scope="col" rowspan="2" colspan="7">FASE Intensiva</th>
-                    <th scope="col" colspan="10">FASE de manutenção</th>
+                    <th scope="col" rowspan="2" colspan="7">Fase Intensiva</th>
+                    <th scope="col" colspan="10">Fase de Manutenção</th>
                 </tr>
                 <tr class="table-primary">
                     <th class="table-warning" scope="col" colspan="4">Para TBP e TBEP</th>
@@ -349,7 +349,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><p>Periodo de Tratamento</p></td>
+                    <td><p>Período de Tratamento</p></td>
                     <td><p>Dia zero</p></td>
                     <td><p>7º dia</p></td>
                     <td><p>15º dia</p></td>
@@ -413,7 +413,7 @@
                     <td class="table-danger"><p>x</p></td>
                 </tr>
                 <tr>
-                    <td><p>Classificação nutricional(peso, altura, IMC)</p></td>
+                    <td><p>Classificação nutricional (peso, altura, IMC)</p></td>
                     <td><p>x</p></td>
                     <td><p></p></td>
                     <td><p>x</p></td>

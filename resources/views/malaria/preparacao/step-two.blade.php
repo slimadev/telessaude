@@ -6,7 +6,7 @@
         </div>
         <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <div class="custom-text-etapa">
-            <strong>PASSO 2:</strong>Reconstruir
+            <strong>PASSO 2:</strong> Reconstruir
             </div>
         </div>
     </div>

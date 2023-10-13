@@ -6,7 +6,7 @@
         </div>
         <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <div class="custom-text-etapa">
-            <strong>PASSO 15:</strong>  Escreva o resultado no processo clínico do paciente
+            <strong>PASSO 15:</strong> Registe o resultado
             </div>
         </div>
     </div>

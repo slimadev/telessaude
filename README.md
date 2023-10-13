@@ -64,3 +64,10 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+##Rodar Seeds
+1. php artisan db:seed --class=SimpleEntitySeeder
+2. php artisan db:seed --class=DocumentSeeder
+3. php artisan db:seed --class=TuberculoseSeeder
+4. php artisan db:seed --class=UserSeeder

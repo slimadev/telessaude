@@ -6,7 +6,7 @@
         </div>
         <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <div class="custom-text-etapa">
-            <strong>PASSO 1:</strong>  Verifique a validade do Kit
+            <strong>PASSO 1:</strong>  Material necessário
             </div>
         </div>
     </div>
@@ -18,7 +18,10 @@
     <div class="card mb-3" style="min-width: 540px;">
   <div class="row g-0" >
     <div class="col-md-2 d-flex flex-col align-items-center">
-      <button type="button" class="btn btn-primary" style="margin-left: 30px" id="btnProcedimentosBack"><i class="bi bi-caret-left" style="font-size: 20px;"></i></button>
+      <button type="button" class="btn btn-primary" style="margin-left: 30px" id="btnProcedimentosBack">
+        <i class="bi bi-caret-left" style="font-size: 20px;">
+        </i>
+      </button>
     </div>
     <div class="col-md-8">
       <div class="card-body" style="text-align:center;">
@@ -37,11 +40,14 @@
     </div>
   </div>
 </div>
-    
-    </div>
+
+
+<div class="custom-text-result d-flex justify-content-center" style="color:red;">
+<p style="font-style: italic;" style="color:red;"> * Sempre explicar o paciente os procedimentos a realizar e o porquê</p>
+</div>    
+</div>
     <br/>
     <hr/>
-    <button type="submit" class="btn btn-primary" id="btnStepOneBack">Anterior</button>
     <button type="submit" class="btn btn-primary" id="btnStepOneNext">Próximo</button>
 </div>
 

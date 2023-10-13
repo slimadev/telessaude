@@ -18,13 +18,13 @@
 <p>Genero  </p>
 <div class="row">
 <div class="col-md-6 form-check ">
-    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" checked>
+    <input class="form-check-input" type="radio" name="flexRadioDisabled" value="1" id="flexRadioDisabled" checked>
     <label class="form-check-label" for="flexRadioDisabled">
         Masculino
     </label>
 </div>
 <div class="col-md-6 form-check ">
-    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" >
+    <input class="form-check-input" type="radio" value="2" name="flexRadioDisabled" id="flexRadioDisabled" >
     <label class="form-check-label" for="flexRadioDisabled">
         Feminino
     </label>

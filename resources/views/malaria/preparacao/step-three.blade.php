@@ -6,7 +6,7 @@
         </div>
         <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <div class="custom-text-etapa">
-            <strong>PASSO 3:</strong>Diluir
+            <strong>PASSO 3:</strong> Diluir
             </div>
         </div>
     </div>
@@ -38,6 +38,9 @@
   </div>
 </div>
     
+<div class="custom-text-result d-flex justify-content-center" style="color:red;">
+<p style="font-style: italic;" style="color:red;"> <strong>Nota: A solução preparada deve ser usado dentro de 1h</strong></p>
+</div>    
     </div>
     <br/>
     <hr/>

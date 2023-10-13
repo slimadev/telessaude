@@ -6,7 +6,7 @@
         </div>
         <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <div class="custom-text-etapa">
-            <strong>PASSO 1:</strong>Pese o paciente e verifique o número de frascos necessários 
+            <strong>PASSO 1:</strong> Pese o paciente e verifique o número de frascos necessários 
             </div>
         </div>
     </div>
@@ -37,6 +37,6 @@
     </div>
     <br/>
     <hr/>
-    <button type="submit" class="btn btn-primary" id="btnStepOneBack">Anterior</button>
+
     <button type="submit" class="btn btn-primary" id="btnStepOneNext">Próximo</button>
 </div>

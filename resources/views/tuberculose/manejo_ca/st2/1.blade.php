@@ -20,7 +20,7 @@
             </div>
         </div>
         <ul id="ST21_TEXT">
-            <li>Certifique-se que no seufrasco está escrito o seu nome e a data da colheta</li>
+            <li>Certifique-se que no seu frasco está escrito o seu nome e a data da colheta</li>
         </ul>
         <br/>
         <div class="text-bg-warning p-3" id="ST21_NOTES_DIV" style="display:none">

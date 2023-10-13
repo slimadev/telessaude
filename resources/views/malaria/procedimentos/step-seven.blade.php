@@ -14,9 +14,11 @@
     <div class="custom-resoultcontent">
     <!--<div class="custom-text-result" style="color:red;"><strong>Positivo-Malária complicada/grave</strong></div>-->
          <img id='imgSlSeven'  alt="" width="200" height="200" class='dist'/>
-   
-  
-    
+        <p>
+         Luvas
+         <br>Swab de álcool 
+         <br>Pacote do dissecante do teste 
+        </p>
     </div>
     <br/>
     <hr/>

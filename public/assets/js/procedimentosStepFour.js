@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 let index =0; 
 const SLIDES=[
-{'nome':slideOne, 'imagem':'assets/img/teste_linha_c.png'}
+{'nome':slideOne, 'imagem':'assets/img/nid_doente.png'}
 ]
 
 $("#dvStepThree").css('display','none');

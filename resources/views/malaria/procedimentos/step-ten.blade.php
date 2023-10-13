@@ -13,7 +13,7 @@
 
     <div class="custom-resoultcontent">
     <!--<div class="custom-text-result" style="color:red;"><strong>Positivo-Malária complicada/grave</strong></div>-->
-         <img id='imgSlTen'  alt="" width="300" height="150" class='dist'/>
+         <img id='imgSlTen'  alt="" width="150" height="200" class='dist'/>
    
   
     

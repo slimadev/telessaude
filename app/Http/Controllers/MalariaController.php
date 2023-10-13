@@ -36,4 +36,13 @@ class MalariaController extends Controller
     public function manejo(){
         return view('malaria_manejo');
     }
+
+    public function user_dashboard(Request $request){
+        $dash = 1;
+        $province_id = $request->user()->province_id;
+        $disease = SimpleEntity::whereCode('61')->first();
+
+        ColeraService::ADD_TO_DASHBOARD('MALARIA', $province_id, $disease->id);
+        return $dash;
+    }
 }

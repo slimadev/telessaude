@@ -72,7 +72,7 @@ class ProfileController extends Controller
         
         $user->save();
  
-         return Redirect::route('profile.edit')->compact('Dados alterados com sucesso!');
+         return Redirect::route('profile.edit')->with('Dados alterados com sucesso!');
      }
 
 

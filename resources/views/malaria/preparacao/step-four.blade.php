@@ -37,6 +37,11 @@
     </div>
   </div>
 </div>
+
+<div class="custom-text-result d-flex justify-content-center" style="color:red;">
+<p style="font-style: italic;" style="color:red;"> <strong>Nota: A solução preparada deve ser usado dentro de 1h</strong></p>
+</div>    
+
     
     </div>
     <br/>

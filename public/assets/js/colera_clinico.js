@@ -120,7 +120,6 @@ $(document).ready(function(){
 
         ADD_LABEL_VALUE_DATA('Bebe/mama',$('#st2_mama').find(":selected").text());
         ADD_LABEL_VALUE_DATA('Preenchimento capilar',$('#st2_capilar').find(":selected").text());
-        ADD_LABEL_VALUE_DATA('Apresenta sinais de oligoanúria/anúria',$('#st2_anuaria').find(":selected").text());
         ADD_LABEL_VALUE_DATA('Frequência cardíaca',hart_rate_value);
         ADD_LABEL_VALUE_DATA('Frequência cardíaca',hart_rate_value);
 

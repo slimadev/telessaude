@@ -90,9 +90,9 @@
         <table class="table text-center table-bordered"  >
         <thead>
                 <tr class="table-primary">
-                    <th scope="col" rowspan="2">Tipo de formulacao pr faixa de peso</th>
-                    <th scope="col" colspan="2">Se a formulacao disponivel for Isoniazida de 100 mg</th>
-                    <th scope="col" colspan="2">Se a formulacao disponivel for Isoniazida de 300 mg</th>
+                    <th scope="col" rowspan="2">Tipo de formulação por faixa de peso</th>
+                    <th scope="col" colspan="2">Se a formulação disponivel for Isoniazida de 100 mg</th>
+                    <th scope="col" colspan="2">Se a formulação disponivel for Isoniazida de 300 mg</th>
                 </tr>
                 <tr class="table-primary">
                     <th scope="col" >Isoniazida (cp 100mg)</th>
@@ -148,9 +148,9 @@
             <table class="table text-center table-bordered"  >
                 <thead>
                     <tr class="table-primary">
-                        <th scope="col" rowspan="2">Tipo de formulacao por faixa de peso</th>
-                        <th scope="col" rowspan="2">Se a formulacao disponivel for 3HP cpm Isoniazida/Rifapenina (300/300 mg) </th>
-                        <th scope="col" colspan="2">Se a formulacao de 3HP em DFC nao estiver disponivel</th>
+                        <th scope="col" rowspan="2">Tipo de formulação por faixa de peso</th>
+                        <th scope="col" rowspan="2">Se a formulação disponivel for 3HP cpm Isoniazida/Rifapenina (300/300 mg) </th>
+                        <th scope="col" colspan="2">Se a formulação de 3HP em DFC não estiver disponivel</th>
                     </tr>
                     <tr class="table-primary">
                         <th scope="col" >Isoniazida (cp 300mg)</th>

@@ -3,10 +3,10 @@ $(document).ready(function(){
     
   let tabela='<table class="table" style="margin-left:80px">';
   tabela+='<thead>';
-  tabela+='<tr><th>Escala de Peso</td><th>No de Frascos</th></tr>';
+  tabela+='<tr><th>Escala de Peso (Kg)</td><th>Nº de Frascos</th></tr>';
   tabela+='</thead>';
   tabela+='<tbody>';
-  tabela+='<tr><td>5-26</td><td>1</td></tr>';
+  tabela+='<tr><td><27</td><td>1</td></tr>';
   tabela+='<tr><td>27-51</td><td>2</td></tr>';
   tabela+='<tr><td>52-75</td><td>3</td></tr>';
   tabela+='<tr><td>76-100</td><td>4</td></tr>';

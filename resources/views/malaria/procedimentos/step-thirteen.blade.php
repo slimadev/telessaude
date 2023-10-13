@@ -6,7 +6,7 @@
         </div>
         <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <div class="custom-text-etapa">
-            <strong>PASSO 13:</strong> Aguarde o tempo recomendado pelo fabrincante para interpretação do resultado do teste. “C” linha do controle; “Pf”-linha do resultado do teste
+            <strong>PASSO 13:</strong> Aguarde o tempo recomendado pelo fabrincante para interpretação do resultado do teste
             </div>
         </div>
     </div>

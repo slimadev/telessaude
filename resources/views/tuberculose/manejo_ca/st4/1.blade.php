@@ -20,8 +20,8 @@
             </div>
         </div>
         <ul id="ST4_TEXT">
-            <li>Se a crianca ja consegue pedir para urinar, pecalhe para urinar antes de defecar</li>
-            <li>As fezes nao devem se misturarar com a urina</li>
+            <li>Se a criança já consegue pedir para urinar, pecalhe para urinar antes de defecar</li>
+            <li>As fezes não devem se misturarar com a urina</li>
         </ul>
     </div>  
 </div>

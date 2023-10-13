@@ -6,14 +6,14 @@
         </div>
         <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <div class="custom-text-etapa">
-            <strong>PASSO 9:</strong>  Coloque a gota de sangue no poço  redondo(5µl)
+            <strong>PASSO 9:</strong>  Coloque a gota de sangue no 2º poço
             </div>
         </div>
     </div>
 
     <div class="custom-resoultcontent">
     <!--<div class="custom-text-result" style="color:red;"><strong>Positivo-Malária complicada/grave</strong></div>-->
-         <img id='imgSlNine'  alt="" width="200" height="200" class='dist'/>
+         <img id='imgSlNine'  alt="" width="300" height="300" class='dist'/>
    
   
     

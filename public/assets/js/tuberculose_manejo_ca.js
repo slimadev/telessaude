@@ -189,6 +189,15 @@ $(document).ready(function(){
    $("#btnStepFour").click(function(e){
     $("#dvStepFive").css("display", "");
     $("#dvStepFour").css("display", "none");
+
+    console.log("AQUI:...")
+    fetch(`/tuberculose_dashboard`)
+          .then((response) => response.json())
+          .then((json_data) => {
+            console.log(json_data)
+
+    });
+
     
    });
 

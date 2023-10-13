@@ -6,15 +6,18 @@
         </div>
         <div class="col-lg-11 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <div class="custom-text-etapa">
-            <strong>PASSO 11:</strong>  Adicione o tampão no poço quadrado
+            <strong>PASSO 11:</strong>  Adicione o tampão no 1ª poço
             </div>
         </div>
     </div>
 
     <div class="custom-resoultcontent">
-    <div class="custom-text-result d-flex justify-content-center" style="color:red;"><strong>"O número de gotas é de acordo com o fabricante"</br>Escreva a hora de leitura no teste</strong></div>
-         <img id='imgSlEleven'  alt="" width="200" height="200" class='dist'/>
-   
+         <img id='imgSlEleven'  alt="" width="250" height="250" class='dist'/>
+         <div class="custom-text-result d-flex justify-content-center" style="color:red;">
+            O número de gotas é de acordo com o fabricante
+            </br>Escreva a hora de leitura no teste
+        
+        </div>
   
     
     </div>

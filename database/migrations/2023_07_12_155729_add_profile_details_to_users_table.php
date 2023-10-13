@@ -15,7 +15,6 @@ return new class extends Migration
             $table->boolean('is_admin')->default(0);
             $table->boolean('is_male')->default(1);
             $table->string('province');
-            $table->string('enquadramento');
         });
     }
 
@@ -28,7 +27,6 @@ return new class extends Migration
             $table->dropColumn('is_admin');
             $table->dropColumn('is_male');
             $table->dropColumn('province');
-            $table->dropColumn('enquadramento');
         });
     }
 };

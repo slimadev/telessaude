@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
   let slideOne ="<strong>Artesunato em pó + ampola de bicarbonato </strong>";
-  let slideTwo ="<p>Injectar o conteúdo da ampola de bicarbonato em frasco de artesunato </p>";
-  let slideThree="<p>Agitar suavemente ate dissolver </p>";
-  let slideFour="<p>A solução reconstruida ficará clara em cerca de 2-3 minutos </p>";
+  let slideTwo ="<p>Injectar o conteúdo da ampola de bicarbonato no frasco de artesunato </p>";
+  let slideThree="<p>Agitar suavemente até dissolver </p>";
+  let slideFour="<p>A solução reconstituída ficará clara em cerca de 2 - 3 minutos </p>";
  
         
 

@@ -125,7 +125,7 @@ $(document).ready(function(){
 
   $("#btnst2Next").click(function(e){
     e.preventDefault()
-    if(STEP_TWO_TEXTS.length > STEP_FOUR_TEXT_INDEX+1){
+    if(STEP_TWO_TEXTS.length > STEP_TWO_TEXT_INDEX+1){
       const currentStep = STEP_TWO_TEXT_INDEX
       STEP_TWO_TEXT_INDEX = STEP_TWO_TEXT_INDEX +1
 
